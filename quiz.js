@@ -78,7 +78,7 @@ function infofunction() {
     document.getElementById('lnaming').innerHTML = "<b>Last Name &nbsp;&nbsp;:  </b>" + lastnames;
     document.getElementById('gendering').innerHTML = "<b>Gender &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: </b>" + genders;
     document.getElementById('emailing').innerHTML = "<b>Mail ID &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: </b>" +emails;
-    document.getElementById('status').innerHTML = "<b>Status &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: </b>" + "NA";
+    document.getElementById('status').innerHTML = "<b>Condition &nbsp;&nbsp;: </b>" + "NA";
 
     document.getElementById('thxnname').innerHTML = "Thank You " + firstnames + " For Playing";
    
@@ -184,10 +184,10 @@ function subfunction() {
 
     document.getElementById('gamestatus').style.color = "black";
     if (correct == 0) {
-        document.getElementById('gamestatus').innerHTML = `00`;
+        document.getElementById('gamestatus').innerHTML = "<b style='color:black;'>Score &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: </b>" + "00";
     }
     else {
-        document.getElementById('gamestatus').innerHTML = `${(correct * 10)}`;
+        document.getElementById('gamestatus').innerHTML = "<b style='color:black;'>Score &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: </b>" + `${(correct * 10)}`;
     }
 
     // ********* Score Card *********
@@ -208,22 +208,22 @@ function subfunction() {
 
     if (correct == 10) {
         document.getElementById('status').style.color = "rgb(24, 141, 24)";
-        document.getElementById('status').innerHTML = "Awesome";
+        document.getElementById('status').innerHTML = "<b>Condition &nbsp;&nbsp;: </b>" + "Awesome";
     }
     else if (correct > 7 && correct < 10) {
-        document.getElementById('status').innerHTML = "Very Good";
+        document.getElementById('status').innerHTML = "<b>Condition &nbsp;&nbsp;: </b>" + "Very Good";
     }
     else if (correct > 4 && correct < 8) {
         document.getElementById('status').style.color = "rgb(243, 111, 4)";
-        document.getElementById('status').innerHTML = "Good";
+        document.getElementById('status').innerHTML = "<b>Condition &nbsp;&nbsp;: </b>" + "Good";
     }
     else if (correct > 2 && correct < 5) {
         document.getElementById('status').style.color = "blue";
-        document.getElementById('status').innerHTML = "You Need to Hard Work";
+        document.getElementById('status').innerHTML = "<b>Condition &nbsp;&nbsp;: </b>" + "You Need to Hard Work";
     }
     else {
         document.getElementById('status').style.color = "red";
-        document.getElementById('status').innerHTML = "Poor";
+        document.getElementById('status').innerHTML = "<b>Condition &nbsp;&nbsp;: </b>" + "Poor";
     }
 
 }
