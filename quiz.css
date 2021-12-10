@@ -16,8 +16,8 @@ html{
 #login{
    background-color: rgb(245, 116, 24);
    color: rgb(252, 252, 252);
-   height: 500px;
-   width: 400px; 
+   height: 530px;
+   width: 380px; 
    background-repeat: no-repeat;
    background-size: 100% 100%;
    text-align: center;
@@ -134,11 +134,29 @@ html{
     color: red;
 }
 
+#forming{
+    display: grid;
+    justify-content: center;
+    row-gap: 1rem;
+    grid-template-columns: 2fr;
+}
 
 @media screen and (max-width: 768px){
     #currAns{
         margin-top: -25px;
         margin-bottom: 20px;
+    }
+
+    #forming{
+      width: 90%;
+     
+    }
+}
+@media screen and (max-width: 410px){
+   
+    #login{
+        width: 90%;
+        height: 500px;
     }
 }
  /* ************************************************************************************** */
