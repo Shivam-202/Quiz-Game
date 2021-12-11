@@ -141,7 +141,7 @@ html{
     grid-template-columns: 2fr;
 }
 
-@media screen and (max-width: 768px){
+@media screen and (max-width: 767px){
     #currAns{
         margin-top: -25px;
         margin-bottom: 20px;
@@ -151,12 +151,24 @@ html{
       width: 90%;
      
     }
+    #profileimg{
+        height: 25%;
+        width: 25%;
+    }
 }
-@media screen and (max-width: 410px){
-   
+@media screen and (max-width: 420px){ 
     #login{
         width: 90%;
         height: 500px;
+    }
+    #profileimg{
+        height: 40%;
+        width: 40%;
+    }
+}
+@media screen and (max-width: 586px){
+    .question{
+        height: 8rem;
     }
 }
  /* ************************************************************************************** */
